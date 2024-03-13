@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@openpanel/nextjs':
-    specifier: 0.0.5-beta
-    version: 0.0.5-beta(next@14.1.3)(react-dom@18.2.0)(react@18.2.0)
+    specifier: 0.0.6-beta
+    version: 0.0.6-beta(next@14.1.3)(react-dom@18.2.0)(react@18.2.0)
   next:
     specifier: 14.1.3
     version: 14.1.3(react-dom@18.2.0)(react@18.2.0)
@@ -119,27 +119,27 @@ packages:
     dev: false
     optional: true
 
-  /@openpanel/nextjs@0.0.5-beta(next@14.1.3)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-rkGYXnFKJ3p9hnrGxdF44Q7n+Crs4QBg/4VQ0511J53frA+kXzSur8uRummWT8WWlLmmxPxmEJtIr9wxTRl9UQ==}
+  /@openpanel/nextjs@0.0.6-beta(next@14.1.3)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-/QH1MBpV3txVX+gHKAWqjAo17ThR4NtlDHnSt9g/A3Px2VVCIwENBAXKiY5zBd/NV5EGz0hHAHaPeHd41Ix64A==}
     peerDependencies:
-      next: ^14.0.0
-      react: ^18.2.0
-      react-dom: ^18.2.0
+      next: ^12.0.0 || ^13.0.0 || ^14.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@openpanel/web': 0.0.5-beta
+      '@openpanel/web': 0.0.6-beta
       next: 14.1.3(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@openpanel/sdk@0.0.5-beta:
-    resolution: {integrity: sha512-+suZtp4bfZpMVlk/kQ3S6c/hI34Adr6V9MqjNIarUrGc/V3hdXB72vazD3AxZQNxIotnZMdsIgWPb1PQWhXNDg==}
+  /@openpanel/sdk@0.0.6-beta:
+    resolution: {integrity: sha512-siUvMTgaHb7ZT9BVIBPIhEhPz5PaBQLCik9SuibwufsO6QWBz7nYqkMMPtqcuAjGFq6V7LcHWBl+Wq7NGZ8obA==}
     dev: false
 
-  /@openpanel/web@0.0.5-beta:
-    resolution: {integrity: sha512-7prkaTWzzoeHzfSWvfpuKlW0VrDk+uj7tPVrPROBrQhqWAxzNzQBCNgl8WrTCkB6+rB7S8V3WHB8D7q+hc6K7g==}
+  /@openpanel/web@0.0.6-beta:
+    resolution: {integrity: sha512-7FwtbBWb8XqIUZ4DjdzMFsEWZo85RDhKkfgC/m6bV71QlQ3iMr+c/XuH6dO3bL7O+q0uFodD9IPksyF/u+P+KA==}
     dependencies:
-      '@openpanel/sdk': 0.0.5-beta
+      '@openpanel/sdk': 0.0.6-beta
     dev: false
 
   /@swc/helpers@0.5.2:

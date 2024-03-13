@@ -9,8 +9,8 @@ dependencies:
     specifier: ^14.0.0
     version: 14.0.0
   '@openpanel/react-native':
-    specifier: 0.0.3-beta
-    version: 0.0.3-beta(expo-application@5.8.3)(expo-constants@15.4.5)(react-native@0.73.4)
+    specifier: 0.0.6-beta
+    version: 0.0.6-beta(expo-application@5.8.3)(expo-constants@15.4.5)(react-native@0.73.4)
   '@react-navigation/native':
     specifier: ^6.0.2
     version: 6.1.16(react-native@0.73.4)(react@18.2.0)
@@ -2285,21 +2285,21 @@ packages:
       rimraf: 3.0.2
     dev: false
 
-  /@openpanel/react-native@0.0.3-beta(expo-application@5.8.3)(expo-constants@15.4.5)(react-native@0.73.4):
-    resolution: {integrity: sha512-bh/33weZykKRHsjiCOFXYGYLKBe1yWJZv6xBmw+2dZPRfHbgiq8ZO6q6xtSQA/6Sk+ak6C8YYcH2smf3Md0dOg==}
+  /@openpanel/react-native@0.0.6-beta(expo-application@5.8.3)(expo-constants@15.4.5)(react-native@0.73.4):
+    resolution: {integrity: sha512-RgYn48vj/uR+9zyI++ZbgDSwRj0dwZHw/wT1i2sGMx/jGDB/tKsA4O59GS77oRV2rDZw5WX1g95VdXnTnMOU6w==}
     peerDependencies:
-      expo-application: ~5.3.0
-      expo-constants: ~14.4.2
-      react-native: ^0.72.5
+      expo-application: ^5.3.0
+      expo-constants: ^14.4.2
+      react-native: ^0.73.4
     dependencies:
-      '@openpanel/sdk': 0.0.3-beta
+      '@openpanel/sdk': 0.0.6-beta
       expo-application: 5.8.3(expo@50.0.11)
       expo-constants: 15.4.5(expo@50.0.11)
       react-native: 0.73.4(@babel/core@7.24.0)(@babel/preset-env@7.24.0)(react@18.2.0)
     dev: false
 
-  /@openpanel/sdk@0.0.3-beta:
-    resolution: {integrity: sha512-/tv0UM3W57LLN1TzRNxoKwAiovkFVq8OXKNYH1Sj+P8xggetdb38u/7TMbA58Jj/pAwfx1w76UiX99qRPZJ5SA==}
+  /@openpanel/sdk@0.0.6-beta:
+    resolution: {integrity: sha512-siUvMTgaHb7ZT9BVIBPIhEhPz5PaBQLCik9SuibwufsO6QWBz7nYqkMMPtqcuAjGFq6V7LcHWBl+Wq7NGZ8obA==}
     dev: false
 
   /@radix-ui/react-compose-refs@1.0.0(react@18.2.0):
