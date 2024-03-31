@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
         trackAttributes
         trackOutgoingLinks
       />
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   )
 }
