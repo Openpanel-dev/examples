@@ -38,6 +38,7 @@ app.get('/bar/:id', (req, res) => {
 })
 app.get('/ip', async (req, res) => {
   res.json({
+    headers: req.op.api.headers,
     ip: {ip: req.ip,geo: await parseIp(req.ip) },
     getClientIp: {ip: getClientIp(req),geo: await parseIp(getClientIp(req)) },
     xForwardedFor: {ip: req.headers['x-forwarded-for'],geo: await parseIp(req.headers['x-forwarded-for'] as string) },
