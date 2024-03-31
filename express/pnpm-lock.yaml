@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@openpanel/express':
-    specifier: 0.0.7-beta
-    version: 0.0.7-beta(express@4.19.2)
+    specifier: 0.0.8-beta
+    version: 0.0.8-beta(express@4.19.2)
   express:
     specifier: ^4.19.2
     version: 4.19.2
@@ -304,18 +304,18 @@ packages:
       fastq: 1.17.1
     dev: true
 
-  /@openpanel/express@0.0.7-beta(express@4.19.2):
-    resolution: {integrity: sha512-MYtu/Ct5tckKHJFRB3spaXobzTqU8ZuRVugHJPWwvUfFffRfQOH4YsZedPxr5tEG4ZFWee+VmyezoxSOpmsnSw==}
+  /@openpanel/express@0.0.8-beta(express@4.19.2):
+    resolution: {integrity: sha512-bjcC7DLi2qrfi5GDXYt7GWrl7lyaIHF3gpMKvGqrhSFJbJwsCRBfCnB3Pgpoviv8NsOqWYq6nIfv/FRr5l0JtA==}
     peerDependencies:
       express: ^3.0.0 || ^4.0.0
     dependencies:
-      '@openpanel/sdk': 0.0.7-beta
+      '@openpanel/sdk': 0.0.8-beta
       express: 4.19.2
       request-ip: 3.3.0
     dev: false
 
-  /@openpanel/sdk@0.0.7-beta:
-    resolution: {integrity: sha512-D2K0inH0xN/JgefZ8kv4A+SiDyXuh7VYG4OtfyEUmJxMqLpDR2iKLvYhqPkzW1kjUiP/E4yxkU5DgC64s9UhJA==}
+  /@openpanel/sdk@0.0.8-beta:
+    resolution: {integrity: sha512-Cs23tPoQqZLiG3A9C3CTPzyhurX+Q/mScaaK79/Kuvcv4vZjqUztLtLqxRx/zxeXYVbanzwR3blJCeTmABexKQ==}
     dev: false
 
   /@pkgjs/parseargs@0.11.0:
