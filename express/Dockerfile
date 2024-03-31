@@ -5,7 +5,7 @@ WORKDIR /examples
 ENV NODE_ENV=production
 ENV PORT=3000
 
-COPY express .
+COPY express express
 
 WORKDIR /examples/express
 
