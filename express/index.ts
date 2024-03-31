@@ -1,6 +1,7 @@
 import express from 'express'
 import createMiddleware from '@openpanel/express';
 import { getClientIp } from 'request-ip';
+import { parseIp } from './geo';
 
 const PORT = Number(process.env.PORT || 3000)
 const app = express()
@@ -37,10 +38,10 @@ app.get('/bar/:id', (req, res) => {
 })
 app.get('/ip', (req, res) => {
   res.json({
-    ip: req.ip,
-    getClientIp: getClientIp(req),
-    xForwardedFor: req.headers['x-forwarded-for'],
-    cfConnectingIp: req.headers['cf-connecting-ip'],
+    ip: {ip: req.ip,geo: parseIp(req.ip) },
+    getClientIp: {ip: getClientIp(req),geo: parseIp(getClientIp(req)) },
+    xForwardedFor: {ip: req.headers['x-forwarded-for'],geo: parseIp(req.headers['x-forwarded-for'] as string) },
+    cfConnectingIp: {ip: req.headers['cf-connecting-ip'],geo: parseIp(req.headers['cf-connecting-ip'] as string) },
   })
 })
 
