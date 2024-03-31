@@ -1,5 +1,6 @@
 import express from 'express'
 import createMiddleware from '@openpanel/express';
+import { getClientIp } from 'request-ip';
 
 const PORT = Number(process.env.PORT || 3000)
 const app = express()
@@ -32,6 +33,14 @@ app.get('/bar/:id', (req, res) => {
   res.json({
     message: 'Foo',
     params: req.params,
+  })
+})
+app.get('/ip', (req, res) => {
+  res.json({
+    ip: req.ip,
+    getClientIp: getClientIp(req),
+    xForwardedFor: req.headers['x-forwarded-for'],
+    cfConnectingIp: req.headers['cf-connecting-ip'],
   })
 })
 
