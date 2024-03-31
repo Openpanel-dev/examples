@@ -36,12 +36,12 @@ app.get('/bar/:id', (req, res) => {
     params: req.params,
   })
 })
-app.get('/ip', (req, res) => {
+app.get('/ip', async (req, res) => {
   res.json({
-    ip: {ip: req.ip,geo: parseIp(req.ip) },
-    getClientIp: {ip: getClientIp(req),geo: parseIp(getClientIp(req)) },
-    xForwardedFor: {ip: req.headers['x-forwarded-for'],geo: parseIp(req.headers['x-forwarded-for'] as string) },
-    cfConnectingIp: {ip: req.headers['cf-connecting-ip'],geo: parseIp(req.headers['cf-connecting-ip'] as string) },
+    ip: {ip: req.ip,geo: await parseIp(req.ip) },
+    getClientIp: {ip: getClientIp(req),geo: await parseIp(getClientIp(req)) },
+    xForwardedFor: {ip: req.headers['x-forwarded-for'],geo: await parseIp(req.headers['x-forwarded-for'] as string) },
+    cfConnectingIp: {ip: req.headers['cf-connecting-ip'],geo: await parseIp(req.headers['cf-connecting-ip'] as string) },
   })
 })
 
